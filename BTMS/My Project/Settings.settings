@@ -1,0 +1,159 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="LocalConnectionString" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Data Source=C:\BTMS\Release\GovEngine.sdf</Value>
+    </Setting>
+    <Setting Name="DatabasePath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\BTMS\Release\GovEngine.sdf</Value>
+    </Setting>
+    <Setting Name="CompanyName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">DEPARTMENT OF INTERIOR AND LOCAL GOVERNMENT
+REGIONAL OFFICE I</Value>
+    </Setting>
+    <Setting Name="Region" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="CompanyLogo" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="dtr_remarks_for_absent" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Absent</Value>
+    </Setting>
+    <Setting Name="sra_remarks_for_absent" Type="System.String" Scope="User">
+      <Value Profile="(Default)">A</Value>
+    </Setting>
+    <Setting Name="dtr_remarks_for_dayoff" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Off</Value>
+    </Setting>
+    <Setting Name="sra_remarks_for_dayoff" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Off</Value>
+    </Setting>
+    <Setting Name="DbBackup_initialpath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\BTMS\Backup\</Value>
+    </Setting>
+    <Setting Name="GovEngineConnectionString_ix" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=C:\BTMS\Release\GovEngine.sdf&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;Microsoft.SqlServerCe.Client.3.5&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=C:\BTMS\Release\GovEngine.sdf</Value>
+    </Setting>
+    <Setting Name="GovEngineConnectionString_ixold" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Data Source=|DataDirectory|\GovEngine.sdf</Value>
+    </Setting>
+    <Setting Name="Engineeredby" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Author: Brylle Lloren</Value>
+    </Setting>
+    <Setting Name="dilg_flex_onduty_rules" Type="System.String" Scope="User">
+      <Value Profile="(Default)">07:30</Value>
+    </Setting>
+    <Setting Name="dilg_flex_offduty_rules" Type="System.String" Scope="User">
+      <Value Profile="(Default)">16:30</Value>
+    </Setting>
+    <Setting Name="dilg_rules_enabled" Type="System.String" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="zk_con_string" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="zk_mdb_path" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="att2000_sync" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="DPWH_Rules" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="MOD_FORGET_CIN_COUT" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="RTM" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="DTR_A" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="DTR_B" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="DTR_C" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="DTR_D" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="DTR_E" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="DTR_F" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="rsrv_0" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="rsrv_1" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="rsrv_2" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="rsrv_3" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="rsrv_4" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="rsrv_5" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="rsrv_6" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="rsrv_7" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="rsrv_8" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="dilg_0b1001" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="dilg_0b1000" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="dilg_0b0001" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="dilg_0b0011" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="dilg_0b1100" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="dilg_0b1101" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="dilg_0b0111" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="dilg_0b0100" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="dilg_0b1011" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="dilg_0b0110" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="dilg_0b0010" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="dilg_0b1110" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+  </Settings>
+</SettingsFile>

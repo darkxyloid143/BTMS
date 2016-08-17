@@ -1,0 +1,1000 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6A4E4885-5978-448D-A1DF-925D14814334}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>BTMS.My.MyApplication</StartupObject>
+    <RootNamespace>BTMS</RootNamespace>
+    <AssemblyName>BTMS</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>false</MapFileExtensions>
+    <SupportUrl>http://bismac.com.ph/contact-bismac</SupportUrl>
+    <ProductName>BISBIO TIME AND ATTENDANCE SOFTWARE</ProductName>
+    <PublisherName>BUSSINESS MACHINES CORPORATION</PublisherName>
+    <SuiteName>BISBIO DEPLOYMENT</SuiteName>
+    <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationRevision>13</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <BootstrapperComponentsLocation>Relative</BootstrapperComponentsLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>BISBIO.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>521743BE8E203785FC3DE3A84DA90442E888D552</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>ATMA_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=11.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.SqlServerCe, Version=3.5.1.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="AssigningStaffSchedule.vb" />
+    <Compile Include="AutoFontsModule.vb" />
+    <Compile Include="BIR_8AM_PM.vb" />
+    <Compile Include="BISBIONetworkDownload.vb" />
+    <Compile Include="CLASSCALCULATE.vb" />
+    <Compile Include="CPU.vb" />
+    <Compile Include="CueBannerText.vb" />
+    <Compile Include="DEPARTMENTFORM.Designer.vb">
+      <DependentUpon>DEPARTMENTFORM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DEPARTMENTFORM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeviceDetails.Designer.vb">
+      <DependentUpon>DeviceDetails.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DeviceDetails.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DownloadFromUSB.vb" />
+    <Compile Include="DTRS\DTR_REPORT_F.vb">
+      <DependentUpon>DTR_REPORT_F.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="DTRS\DTR_REPORT_D.vb">
+      <DependentUpon>DTR_REPORT_D.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="DTRS\DTR_REPORT_C.vb">
+      <DependentUpon>DTR_REPORT_C.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="DTRS\DTR_REPORT_B.vb">
+      <DependentUpon>DTR_REPORT_B.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="DTR_REPORT.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DTR_REPORT.rpt</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.vb">
+      <DependentUpon>Form3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form4.Designer.vb">
+      <DependentUpon>Form4.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form4.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMessage.Designer.vb">
+      <DependentUpon>FormMessage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormMessage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GlobalVariables.vb" />
+    <Compile Include="GovEngineDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GovEngineDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="GovEngineDataSet.vb">
+      <DependentUpon>GovEngineDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LEAVETYPEFORM.Designer.vb">
+      <DependentUpon>LEAVETYPEFORM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LEAVETYPEFORM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LOGDUMP.vb" />
+    <Compile Include="Messages\GLOBAL_MSGCOM.vb" />
+    <Compile Include="Messages\MSGOK.Designer.vb">
+      <DependentUpon>MSGOK.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Messages\MSGOK.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Messages\MSGYESNO.Designer.vb">
+      <DependentUpon>MSGYESNO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Messages\MSGYESNO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MTOFORM.Designer.vb">
+      <DependentUpon>MTOFORM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MTOFORM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Office_8AM_12PM_01PM_5PM_PREDEFINED.vb" />
+    <Compile Include="OTMONTHLY.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OTMONTHLY.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="OVERTIMESUMMARY.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OVERTIMESUMMARY.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="privilege_schema.vb" />
+    <Compile Include="Raw.vb" />
+    <Compile Include="ReadExcel.vb" />
+    <Compile Include="Registration.vb" />
+    <Compile Include="RESIGNED_EMPFORM.Designer.vb">
+      <DependentUpon>RESIGNED_EMPFORM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RESIGNED_EMPFORM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings.vb" />
+    <Compile Include="SHIFTSCHEMA.Designer.vb">
+      <DependentUpon>SHIFTSCHEMA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SHIFTSCHEMA.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SHIFTTABLE.Designer.vb">
+      <DependentUpon>SHIFTTABLE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SHIFTTABLE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SQLCE_MANAGER.vb" />
+    <Compile Include="SQLControl.vb" />
+    <Compile Include="SRAMONTHLY.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SRAMONTHLY.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Structs.vb" />
+    <Compile Include="systemsettings.vb" />
+    <Compile Include="UDiskDataMain.vb" />
+    <Compile Include="VIEWER.Designer.vb">
+      <DependentUpon>VIEWER.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VIEWER.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ZK_MDB_CONNECT.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DEPARTMENTFORM.resx">
+      <DependentUpon>DEPARTMENTFORM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeviceDetails.resx">
+      <DependentUpon>DeviceDetails.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DTRS\DTR_REPORT_F.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>DTR_REPORT_F.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DTRS\DTR_REPORT_D.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>DTR_REPORT_D.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DTRS\DTR_REPORT_C.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>DTR_REPORT_C.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DTRS\DTR_REPORT_B.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>DTR_REPORT_B.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DTR_REPORT.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>DTR_REPORT.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form4.resx">
+      <DependentUpon>Form4.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMessage.resx">
+      <DependentUpon>FormMessage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LEAVETYPEFORM.resx">
+      <DependentUpon>LEAVETYPEFORM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Messages\MSGOK.resx">
+      <DependentUpon>MSGOK.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Messages\MSGYESNO.resx">
+      <DependentUpon>MSGYESNO.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MTOFORM.resx">
+      <DependentUpon>MTOFORM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OTMONTHLY.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>OTMONTHLY.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OVERTIMESUMMARY.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>OVERTIMESUMMARY.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RESIGNED_EMPFORM.resx">
+      <DependentUpon>RESIGNED_EMPFORM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SHIFTSCHEMA.resx">
+      <DependentUpon>SHIFTSCHEMA.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SHIFTTABLE.resx">
+      <DependentUpon>SHIFTTABLE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SRAMONTHLY.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SRAMONTHLY.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VIEWER.resx">
+      <DependentUpon>VIEWER.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ATMA_TemporaryKey.pfx" />
+    <None Include="backup.bat" />
+    <None Include="Format\staff_masterlist.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="GovEngineDataSet.xsc">
+      <DependentUpon>GovEngineDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="GovEngineDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GovEngineDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GovEngineDataSet.xss">
+      <DependentUpon>GovEngineDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\app.manifest">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Resources\DroidSansMono.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BISBIO.ico" />
+    <Content Include="GovEngine.sdf" />
+    <Content Include="WORDPAD.EXE">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\arr.png" />
+    <None Include="Resources\arrl.png" />
+    <None Include="Resources\openmenuwhite.png" />
+    <None Include="Resources\Right-128.png" />
+    <None Include="Resources\ajaxload.gif" />
+    <None Include="Resources\BISMAC-LOGO2.png" />
+    <None Include="Resources\BTMS.png" />
+    <None Include="Resources\find_users-128.png" />
+    <None Include="Resources\1.png" />
+    <None Include="Resources\1.jpg" />
+    <None Include="Resources\11.jpg" />
+    <None Include="Resources\11.png" />
+    <None Include="Resources\trk.png" />
+    <None Include="Resources\add-128.png" />
+    <None Include="Resources\Screenshot %282%29.png" />
+    <None Include="Resources\checkok.png" />
+    <None Include="Resources\error.png" />
+    <None Include="Resources\wrong.png" />
+    <None Include="Resources\question.png" />
+    <None Include="Resources\resign.png" />
+    <None Include="Resources\dayofweek.png" />
+    <None Include="Resources\dayofweek1.png" />
+    <None Include="Resources\ajaxload1.gif" />
+    <None Include="Resources\ajaxload2.gif" />
+    <None Include="Resources\1439903132_gear-user.png" />
+    <None Include="Resources\users.jpg" />
+    <None Include="Resources\users1.jpg" />
+    <None Include="Resources\users2.jpg" />
+    <None Include="Resources\users3.jpg" />
+    <None Include="Resources\users.png" />
+    <None Include="Resources\OFF.png" />
+    <None Include="Resources\OFF1.png" />
+    <None Include="Resources\ON1.png" />
+    <None Include="Resources\OFF2.png" />
+    <None Include="Resources\OFF3.png" />
+    <None Include="Resources\OFF4.png" />
+    <None Include="Resources\OFFA.png" />
+    <None Include="Resources\ONA.png" />
+    <None Include="Resources\Attach-128.png" />
+    <None Include="Resources\save1.png" />
+    <None Include="Resources\save2.png" />
+    <None Include="Resources\mZOobZm.jpg" />
+    <Content Include="sqlceca35.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="sqlcecompact35.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="sqlceer35EN.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="sqlceme35.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="sqlceoledb35.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="sqlceqp35.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="sqlcese35.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\progression1.gif" />
+    <None Include="Resources\spin.gif" />
+    <None Include="Resources\BISBIOSYNC1.png" />
+    <None Include="Resources\BISBIOSYNC.png" />
+    <None Include="Resources\vector_66_09-128.png" />
+    <None Include="Resources\vector_66_01-128.png" />
+    <None Include="Resources\EX1.png" />
+    <None Include="Resources\RP3.png" />
+    <None Include="Resources\RP1.png" />
+    <None Include="Resources\dl3.png" />
+    <None Include="Resources\dl2.png" />
+    <None Include="Resources\dl1.png" />
+    <None Include="Resources\ATTOP3.png" />
+    <None Include="Resources\ATTOP2.png" />
+    <None Include="Resources\ATTOP1.png" />
+    <None Include="Resources\EMP5.png" />
+    <None Include="Resources\EMP4.png" />
+    <None Include="Resources\EMP3.png" />
+    <None Include="Resources\EMP2.png" />
+    <None Include="Resources\EMP1.png" />
+    <None Include="Resources\EMPLOYEE ATTENDANCE.png" />
+    <None Include="Resources\camera.png" />
+    <None Include="Resources\REPORT6.png" />
+    <None Include="Resources\Reports.png" />
+    <None Include="Resources\bir.png" />
+    <None Include="Resources\BISBIO5.png" />
+    <None Include="Resources\ew.gif" />
+    <None Include="Resources\ATT1.png" />
+    <None Include="Resources\ATT.png" />
+    <None Include="Resources\settings_0.png" />
+    <None Include="Resources\SYSTEMsettings.png" />
+    <None Include="Resources\REPORT5.png" />
+    <None Include="Resources\REPORT4.png" />
+    <None Include="Resources\REPORT3.png" />
+    <None Include="Resources\support-loading.gif" />
+    <None Include="Resources\settings.png" />
+    <None Include="Resources\BISBIO4.png" />
+    <None Include="Resources\BISBIO3.png" />
+    <None Include="Resources\arrow.png" />
+    <None Include="Resources\download4.png" />
+    <None Include="Resources\download3.png" />
+    <None Include="Resources\download2.png" />
+    <None Include="Resources\download.png" />
+    <None Include="Resources\homez1.png" />
+    <None Include="Resources\homez.png" />
+    <None Include="Resources\home.png" />
+    <None Include="Resources\cameras2-128.png" />
+    <None Include="Resources\info-1281.png" />
+    <None Include="Resources\infoz.png" />
+    <None Include="Resources\info-128.png" />
+    <None Include="Resources\infor1.png" />
+    <None Include="Resources\LN4.png" />
+    <None Include="Resources\ls3.png" />
+    <None Include="Resources\LN2.png" />
+    <None Include="Resources\line1.png" />
+    <None Include="Resources\st2.png" />
+    <None Include="Resources\min.png" />
+    <None Include="Resources\close_window.png" />
+    <None Include="Resources\bg1.png" />
+    <None Include="Resources\login1.png" />
+    <None Include="Resources\login.png" />
+    <None Include="Resources\REPORT2.png" />
+    <None Include="Resources\REPORT1.png" />
+    <None Include="Resources\REPORT.png" />
+    <None Include="Resources\BISBIO2.png" />
+    <None Include="Resources\BISBIO1.png" />
+    <None Include="Resources\BISBIO.png" />
+    <None Include="Resources\department.png" />
+    <None Include="Resources\employeeschedules1.png" />
+    <None Include="Resources\SHIFTMANAGEMENT.png" />
+    <None Include="Resources\employeeschedules.png" />
+    <None Include="Resources\ATTMGNT1.png" />
+    <None Include="Resources\ATTMGNT.png" />
+    <None Include="Resources\DEPARTMENT1.png" />
+    <None Include="Resources\employeeprofiles1.png" />
+    <None Include="Resources\attendance2.png" />
+    <None Include="Resources\attendance1.png" />
+    <None Include="Resources\attendance.png" />
+    <None Include="Resources\attendance.jpg" />
+    <None Include="Resources\EMPLOYEES.png" />
+    <None Include="Resources\employeeprofiles.png" />
+    <None Include="Resources\images.png" />
+    <None Include="Resources\imagesd.png" />
+    <None Include="Resources\home21.png" />
+    <None Include="Resources\home2.png" />
+    <None Include="Resources\home.jpg" />
+    <None Include="Resources\save.png" />
+    <None Include="Resources\remove.png" />
+    <None Include="Resources\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.FSharp.2.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft Visual F# Runtime for .NET 2.0</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.ReportViewer.10.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft Visual Studio 2010 Report Viewer</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.SQL.Server.Compact.3.5">
+      <Visible>False</Visible>
+      <ProductName>SQL Server Compact 3.5 SP2</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="SAP.CrystalReports14.NET.2.0">
+      <Visible>False</Visible>
+      <ProductName>SAP Crystal Reports Runtime Engine for .NET Framework</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="SSCE">
+      <Guid>{CE4AACFA-3CFD-4028-B2D9-F272314F07C8}</Guid>
+      <VersionMajor>3</VersionMajor>
+      <VersionMinor>5</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="zkemkeeper">
+      <Guid>{FE9DED34-E159-408E-8490-B720A5E632C7}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="ZKFPEngXControl">
+      <Guid>{D95CB779-00CB-4B49-97B9-9F0B61CAB3C1}</Guid>
+      <VersionMajor>4</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="CrystalDecisions.CrystalReports.Engine">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.ClientDoc">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.CommLayer">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.CommonControls">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.CommonObjectModel">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.Controllers">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.CubeDefModel">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.DataDefModel">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.DataSetConversion">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.ObjectFactory">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.Prompting">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.ReportDefModel">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.XmlSerialize">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportSource">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.Shared">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.Windows.Forms">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="GovEngine.sdf">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.ReportViewer.Common">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.ReportViewer.DataVisualization">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.ReportViewer.ProcessingObjectModel">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.ReportViewer.WinForms">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.VisualBasic.PowerPacks.Vs">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="sqlceca35.dll">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="sqlcecompact35.dll">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="sqlceer35EN.dll">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="sqlceme35.dll">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="sqlceoledb35.dll">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="sqlceqp35.dll">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="sqlcese35.dll">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="stdole">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="System.Data.SqlServerCe">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
